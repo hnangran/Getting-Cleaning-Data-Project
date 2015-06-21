@@ -1,8 +1,10 @@
+
+#Setup - Set working directory
 setwd("~/Coursera - Data Science Specialization/Getting and Cleaning Data/UCI HAR Dataset")
 
 #1. Merges the training and the test sets to create one data set.
 
-# Read features and activity data
+#Read features and activity data
 featureNames = read.table("./features.txt", header = FALSE)
 activityLabels = read.table("./activity_labels.txt", header = FALSE)
 
@@ -69,8 +71,8 @@ colNames = colnames(finalData)
 #4. Appropriately labels the data set with descriptive variable names. 
 #Skipping this step as the data is appropriately labeled
 
-#5. 
-tidyData = aggregate(select(finalData, -(SubjectID:ActivityType)),by=list(ActivityName=finalData$ActivityType, SubjectID=finalData$SubjectID),mean);
+#5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+tidyData = aggregate(select(finalData, -(SubjectID:ActivityType)),by=list(ActivityType=finalData$ActivityType, SubjectID=finalData$SubjectID),mean);
 
 # Export the tidyData set 
 write.table(tidyData, './tidyData.txt',row.names=FALSE,sep='\t');
