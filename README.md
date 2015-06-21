@@ -34,18 +34,18 @@ The code file “run_analysis.R” assumes that the data files have been downloa
 
 Variables —> Description
 
-featureNames —> contains all the feature names
-activityLables —> contains all activity labels
-subjectTrain —> contains dataset of file subject_train.txt
-xTrain —> contains dataset of file X_train.txt
-yTrain —> contains dataset of file Y_train.txt
-trainData —> contains merger of subjectTrain, xTrain, yTrain
-subjectTest —> contains dataset of subject_test.txt
-xTest —> contains dataset of file X_test.txt
-yTest —> contains dataset of file Y_text.txt
-testData —> contains merger of subjectTest, xTest, yTest
-mergedData -> contains merger of trainData and testData
-colNames —> contains column names of dataset. This variable is reused throughout the program to store column names of the relevant dataset at that stage.
-extractedMeasurements —> contains dataset for Subject ID, Activity ID, and the mean and standard deviation measurements
-finalData —> contains Subject ID, Activity Type, and the mean and standard deviation measurements
-tidyData —> contains Subject ID, Activity Type, and aggregate of the mean and standard deviation measurements
+- featureNames —> contains all the feature names
+- activityLables —> contains all activity labels
+- subjectTrain —> contains dataset of file subject_train.txt
+- xTrain —> contains dataset of file X_train.txt
+- yTrain —> contains dataset of file Y_train.txt
+- trainData —> contains merger of subjectTrain, xTrain, yTrain
+- subjectTest —> contains dataset of subject_test.txt
+- xTest —> contains dataset of file X_test.txt
+- yTest —> contains dataset of file Y_text.txt
+- testData —> contains merger of subjectTest, xTest, yTest
+- mergedData -> contains merger of trainData and testData
+- colNames —> contains column names of dataset. This variable is reused throughout the program to store column names of the relevant dataset at that stage
+- extractedMeasurements —> contains dataset for Subject ID, Activity ID, and the mean and standard deviation measurements
+- finalData —> contains Subject ID, Activity Type, and the mean and standard deviation measurements
+- tidyData —> contains Subject ID, Activity Type, and aggregate of the mean and standard deviation measurements
